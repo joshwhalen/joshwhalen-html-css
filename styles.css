@@ -1,0 +1,133 @@
+/* Method creating a base size for fonts, then making relative changes to that size */
+html {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 62.5%;
+}
+
+/* Sets sizes and margins for the basic text elements */
+p, ul, ol, dl {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  margin-bottom: 12px;
+}
+
+/* Next four blocks are setting sizes for the headline types */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.7rem;
+  line-height: 3.1rem;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin: 16px 0;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin: 25px 0 8px 0;
+}
+
+/* Setting width of the article */
+article {
+  max-width: 620px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+
+/* Setting the style for 'byline' class */
+.byline {font-family: Tahoma, Arial, sans-serif;}
+
+/* Setting border style */
+dl {
+  border-bottom: 1px grey dotted;
+  border-top: 1px grey dotted;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 1.4rem;
+  padding: 12px 0px;
+  margin-top: 16px;
+  
+}
+
+/* A method to fit dd and dt on the same line using float */
+dd {
+  float: left;
+  margin-right: 5px;
+  font-weight: bold;
+
+}
+
+header {
+  float: left;
+  width: 48%;
+}
+
+/* Adjusting width and position of main recipe photo */
+figure#main-recipe-photo {
+  float: right;
+  width: 48%;
+}
+/* Width is 100% OF THE 48% ABOVE */
+figure#main-recipe-photo img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Styling the caption */
+figcaption {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 1.2rem;
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+
+/* Canceling out floats using the clear property */
+.intro {
+  margin-bottom: 20px;
+  clear: both;
+}
+
+/* Adding styles to list element */
+ul {
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+/* Adding margin to directions so they can breathe */
+ol {
+  list-style-position: inside;
+}
+
+ol li {
+  margin-top: 8px;
+}
+
+/* Styling nutritional info*/
+#nutrition li {
+  list-style-type: none;
+  border-bottom: grey dotted 1px;
+  float: left;
+  width: 48%;
+}
+
+/* Using nth-child value to target specific items but not others, in this case just the odd-numbered elements */
+#nutrition li:nth-child(odd) {
+  margin-right: 20px;
+}
+
+/*  */
+footer {
+  clear: both;
+  text-align: center;
+  margin-top: 140px;
+}
+
+footer p {
+  font: 1.2rem Arial;
+}
